@@ -3,7 +3,12 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.println(this.level + "Level");
+    if level  0 {
+      System.out.println("Level 1");
+    } else {
+      System.out.println("Level" + this.level);
+    }
+    
     TodoList todo = null;
 
     System.out.print("どの敵を倒す？：");
