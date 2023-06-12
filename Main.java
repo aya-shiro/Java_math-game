@@ -14,7 +14,7 @@ public class Main {
       System.out.println("Start!");
       System.out.print(myName + " ");
       System.out.println("Level 1");
-      Enemy.firstMatch(level);
+      Enemy.firstMatch(level, totalArms);
     } else {
       // System.out.println("Level" + level);
       // Enemy.enemyMatch();
