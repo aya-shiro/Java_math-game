@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("名前：");
@@ -14,32 +14,11 @@ class Main {
       System.out.println("Start!");
       System.out.print(myName + " ");
       System.out.println("Level 1");
-      Enemy.firstMatch();
+      Enemy.firstMatch(level);
     } else {
       // System.out.println("Level" + level);
-      Enemy.enemyMatch();
+      // Enemy.enemyMatch();
     }
   }
 }
 
-
-class Enemy {
-  private String enemyName;
-  private int arms;
-
-  public static firstMatch(int level){
-    for(int level=1;level<=10;level++){
-      Scanner scanner = new Scanner(System.in);
-      System.out.print("どの敵を倒す？：");
-      String enemyName = scanner.next();
-      System.out.println(enemyName + "を倒した！");
-      System.out.println(enemyName + "の武器値" +  "を自分の武器に加算した！");
-      return level++;
-    }
-  }
-  
-  pubric static enemyMatch(){
-    super.firstMatch();
-    System.out.println("Level" + level);
-  }
-}
