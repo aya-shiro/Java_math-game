@@ -8,6 +8,8 @@ public class Main {
     // Me me = new Me(0, 1);
     System.out.print("最初に持つ武器の強さを入力してください：");
     int myArm = scanner.nextInt();
+    Enemy.setMyArm(myArm);
+
     
     int level = 1;
     if (level == 1) {

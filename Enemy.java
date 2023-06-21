@@ -4,6 +4,10 @@ public class Enemy {
   // private String enemyName;
   private static int myArm;
   
+  public static void setMyArm(int value) {
+    myArm = value;
+  }
+  
   public static int getMyArm() {
     return myArm;
   }
@@ -13,7 +17,7 @@ public class Enemy {
       Scanner scanner = new Scanner(System.in);
       int min = 1;
       int max = 20;
-      int randomEnemyStatus = (int) Math.floor(Math.random() + (max - min + 1) + min);
+      int randomEnemyStatus = (int) Math.floor(Math.random() * (max - min + 1) + min);
 
       int enemyArm1 = myArm + randomEnemyStatus;
       int enemyArm2 = myArm + randomEnemyStatus;
