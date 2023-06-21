@@ -7,14 +7,14 @@ public class Main {
     String myName = scanner.next();
     // Me me = new Me(0, 1);
     System.out.print("最初に持つ武器の強さを入力してください：");
-    int totalArms = scanner.nextInt();
+    int myArm = scanner.nextInt();
     
     int level = 1;
     if (level == 1) {
       System.out.println("Start!");
       System.out.print(myName + " ");
       System.out.println("Level 1");
-      Enemy.Match(level, totalArms);
+      Enemy.Match(level, myArm);
     } else {
       // System.out.println("Level" + level);
       // Enemy.enemyMatch();
