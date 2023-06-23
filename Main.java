@@ -5,7 +5,6 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     System.out.print("名前：");
     String myName = scanner.next();
-    // Me me = new Me(0, 1);
     System.out.print("最初に持つ武器の強さを入力してください：");
     int myArm = scanner.nextInt();
     Enemy.setMyArm(myArm);
