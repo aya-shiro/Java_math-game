@@ -45,6 +45,14 @@ public class Enemy {
 
     for (int i = 0; i < enemyArms.length; i++) {
       if (totalArms > enemyArms[i]) {
+        
+        // randomEnemyStatus = (int) (Math.random() * 10);
+  
+        int enemyArm = enemyArms[i];
+        System.out.print("敵A:" + enemyArms[0] + " " );
+        System.out.print("敵B:" + enemyArms[1] + " " );
+        System.out.println("敵C:" + enemyArms[2]);
+        
         System.out.println(enemyName + "を倒した！");
         System.out.println("Level" + level + "になった");
         System.out.println(enemyName + "の武器値を自分の武器に加算した！");
